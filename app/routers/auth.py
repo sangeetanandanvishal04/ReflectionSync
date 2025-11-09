@@ -4,7 +4,7 @@ from sqlalchemy.orm import Session
 
 from .. import schemas, tablesmodel, utils, oAuth2
 
-router = APIRouter(tags=['Authentication'])
+router = APIRouter(prefix="/auth", tags=['Authentication'])
 
 """ {
     "email": "user@gmail.com",

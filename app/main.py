@@ -3,7 +3,7 @@ from .database import get_db, engine
 from . import tablesmodel, utils
 from fastapi.middleware.cors import CORSMiddleware
 from .config import settings
-from .routers import auth, admin
+from .routers import auth, admin, floorplans, bookings, overlays
 
 app = FastAPI()
 
@@ -40,6 +40,9 @@ create_initial_admin()
 
 app.include_router(auth.router)
 app.include_router(admin.router)
+app.include_router(floorplans.router)
+app.include_router(bookings.router)
+app.include_router(overlays.router)
 
 @app.get("/")
 def root():
