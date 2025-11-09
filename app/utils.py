@@ -35,7 +35,7 @@ def send_email(subject: str, recipient_email: str, html_content: str):
         server.sendmail(sender_email, recipient_email, msg.as_string())
 
 def send_signup_email(recipient_email: str):
-    subject = "Welcome — ReflectionSync Floor Plan Management"
+    subject = "Welcome - ReflectionSync Floor Plan Management"
     html_content = f"""
     <html>
     <body>
@@ -49,7 +49,7 @@ def send_signup_email(recipient_email: str):
             <li>Book meeting rooms and check availability.</li>
             <li>Collaborate with admins to keep layouts up-to-date.</li>
         </ul>
-        <p>If you have any questions, contact your admin or reply to this email.</p>
+        <p>If you have any questions, contact your admin.</p>
         <p>Best regards,<br/>ReflectionSync Floor Plan Team</p>
         <p style="font-size: small; color: gray;">This is an automated message. Please do not reply to this email.</p>
     </body>
@@ -58,11 +58,11 @@ def send_signup_email(recipient_email: str):
     send_email(subject, recipient_email, html_content)
 
 def send_otp_email(recipient_email: str, otp: str):
-    subject = "ReflectionSync — Your OTP for Password Reset"
+    subject = "ReflectionSync - Your OTP for Password Reset"
     html_content = f"""
     <html>
     <body>
-        <h2>ReflectionSync — Password Reset OTP</h2>
+        <h2>ReflectionSync - Password Reset OTP</h2>
         <p>Hi,</p>
         <p>Your One-Time Password (OTP) to reset your ReflectionSync account password is:</p>
         <h1 style="color: #d9534f;">{otp}</h1>
