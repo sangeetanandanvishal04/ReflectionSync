@@ -1,12 +1,10 @@
 ---
 
-## 🏢 Intelligent Floor Plan Management System (MoveInSync Placement Project)
+## 🏢 Intelligent Floor Plan Management System
 
 ### 🔍 Overview
 
 The **Intelligent Floor Plan Management System** is a FastAPI-based backend that enables organizations to **digitally manage floor plans, rooms, and seat allocations**, and supports **real-time concurrent editing with optimistic locking**.
-
-This project is part of the MoveInSync Placement Assignment, focusing on **collaborative workspace management**, **booking**, and **floor plan visualization**.
 
 ---
 
